@@ -73,7 +73,7 @@ export default function CreateTenant() { // Aapke file ka naam
     }
     
     return (
-        <div className="min-h-screen flex flex-col md:flex-row">
+        <div className="min-h-screen bg-white flex flex-col md:flex-row">
             {/* --- (LEFT PANEL UPDATED) --- */}
             <div className="w-full md:w-1/2 m-4  sm:m-4 bg-gradient-to-br from-[#8b5cf6] via-[#7c3aed] to-[#6d28d9] rounded-3xl p-6 sm:p-10 lg:p-16 flex flex-col justify-between relative overflow-hidden shadow-xl">
                 <div
@@ -160,12 +160,6 @@ export default function CreateTenant() { // Aapke file ka naam
                             Logout
                         </button>
                     </div>
-                    
-                    <img
-                        src="/zenotech-logo.png"
-                        alt="Zenotech Logo"
-                        className="mx-auto mb-6 w-36"
-                    />
                     <h2 className="text-3xl font-bold text-gray-900 mb-2">
                         Welcome, {userData?.companyName || 'Team'} 👋
                     </h2>
