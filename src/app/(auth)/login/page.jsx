@@ -219,7 +219,7 @@ export default function Login() {
                   value={email} // <-- State se link kiya
                   onChange={(e) => setEmail(e.target.value)} // <-- State update
                   required
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                 />
               </div>
               <div>
@@ -233,7 +233,7 @@ export default function Login() {
                     value={password} // <-- State se link kiya
                     onChange={(e) => setPassword(e.target.value)} // <-- State update
                     required
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent pr-12"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent pr-12"
                   />
                   <Eye className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 cursor-pointer" />
                 </div>
