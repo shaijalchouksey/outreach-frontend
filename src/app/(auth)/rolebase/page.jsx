@@ -87,7 +87,9 @@ export default function CreateTenant() { // Aapke file ka naam
                 <div className="absolute top-10 left-1/4 w-40 h-40 sm:w-60 sm:h-60 bg-white opacity-10 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-6 right-1/4 w-32 h-32 sm:w-48 sm:h-48 bg-white opacity-10 rounded-full blur-2xl"></div>
                 <div className="relative z-10">
-                    
+                    <h1 className="text-white text-xl sm:text-2xl lg:text-3xl font-semibold mb-10 sm:mb-16 text-center md:text-left">
+                        Outreach
+                    /h1>
                     <div className="relative flex justify-center mb-14 sm:mb-20 mt-10 sm:mt-0">
                         <div className="bg-white rounded-2xl sm:rounded-3xl h-48 sm:h-64 w-64 sm:w-80 shadow-2xl"></div>
                         <div className="absolute left-0 sm:left-1 -bottom-10 sm:-bottom-12 bg-white rounded-2xl shadow-2xl p-4 sm:p-5 w-40 sm:w-44">
