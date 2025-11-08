@@ -176,7 +176,7 @@ export default function CreateTenant() { // Aapke file ka naam
                           transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white"
                         >
                           <div className="bg-purple-100 p-3 rounded-full mb-4 group-hover:bg-purple-200 transition">
-                            <img src="/icons/admin.png" alt="Admin Dashboard" className="w-10 h-10" />
+                            <img src="/admin.png" alt="Admin Dashboard" className="w-10 h-10" />
                           </div>
                           <h3 className="font-semibold text-lg text-gray-900 mb-1">
                             Admin Dashboard
@@ -192,7 +192,7 @@ export default function CreateTenant() { // Aapke file ka naam
                         transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white"
                       >
                         <div className="bg-purple-100 p-3 rounded-full mb-4 group-hover:bg-purple-200 transition">
-                          <img src="/icons/marketing.png" alt="Marketing Workspace" className="w-10 h-10" />
+                          <img src="/workspace.png" alt="Marketing Workspace" className="w-10 h-10" />
                         </div>
                         <h3 className="font-semibold text-lg text-gray-900 mb-1">
                           Marketing Workspace
@@ -207,7 +207,7 @@ export default function CreateTenant() { // Aapke file ka naam
                         transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white"
                       >
                         <div className="bg-purple-100 p-3 rounded-full mb-4 group-hover:bg-purple-200 transition">
-                          <img src="/icons/sales.png" alt="Sales Dashboard" className="w-10 h-10" />
+                          <img src="/sales.png" alt="Sales Dashboard" className="w-10 h-10" />
                         </div>
                         <h3 className="font-semibold text-lg text-gray-900 mb-1">
                           Sales Dashboard
@@ -222,7 +222,7 @@ export default function CreateTenant() { // Aapke file ka naam
                         transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white"
                       >
                         <div className="bg-purple-100 p-3 rounded-full mb-4 group-hover:bg-purple-200 transition">
-                          <img src="/icons/analyst.png" alt="Analyst Panel" className="w-10 h-10" />
+                          <img src="/analyst.png" alt="Analyst Panel" className="w-10 h-10" />
                         </div>
                         <h3 className="font-semibold text-lg text-gray-900 mb-1">
                           Analyst Panel
