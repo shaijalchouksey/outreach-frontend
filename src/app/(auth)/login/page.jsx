@@ -325,7 +325,7 @@ export default function Login() {
 
       {/* (6) --- Naya Modal (Hidden by default) --- */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 transition-opacity" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-white bg-opacity-60 transition-opacity" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full m-4">
             
             {/* Modal Content */}
@@ -346,7 +346,7 @@ export default function Login() {
                   value={modalEmail}
                   onChange={(e) => setModalEmail(e.target.value)}
                   required
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
                 />
               </div>
 
