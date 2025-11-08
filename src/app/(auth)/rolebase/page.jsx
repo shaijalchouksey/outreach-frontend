@@ -173,42 +173,70 @@ export default function CreateTenant() { // Aapke file ka naam
                         Choose the workspace you’d like to access — everything’s set up and ready
                         to go for you and your team.
                     </p>
-
-                    {/* Role-based logic */}
-                    {userData?.role === 'admin' && (
-                        <div className="border-2 border-gray-200 hover:border-purple-500 rounded-xl p-5 cursor-pointer transition-all hover:shadow-md mb-5">
-                            <img src="/icons/admin.png" alt="Admin Dashboard" className="mx-auto mb-3 w-12" />
-                            <h3 className="font-semibold text-lg text-gray-900">Admin Dashboard</h3>
-                            <p className="text-gray-600 text-sm mt-1">
-                                Manage users, settings, and reports across your organization.
-                            </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+                      {userData?.role === 'admin' && (
+                        <div
+                          className="group border-2 border-gray-200 hover:border-purple-500 rounded-2xl p-6 flex flex-col items-center text-center 
+                          transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white"
+                        >
+                          <div className="bg-purple-100 p-3 rounded-full mb-4 group-hover:bg-purple-200 transition">
+                            <img src="/icons/admin.png" alt="Admin Dashboard" className="w-10 h-10" />
+                          </div>
+                          <h3 className="font-semibold text-lg text-gray-900 mb-1">
+                            Admin Dashboard
+                          </h3>
+                          <p className="text-gray-600 text-sm leading-relaxed">
+                            Manage users, settings, and reports across your organization.
+                          </p>
                         </div>
-                    )}
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
-                        <div className="border-2 border-gray-200 hover:border-purple-500 rounded-xl p-5 cursor-pointer transition-all hover:shadow-md">
-                            <img src="/icons/marketing.png" alt="Marketing Workspace" className="mx-auto mb-3 w-12" />
-                            <h3 className="font-semibold text-lg text-gray-900">Marketing Workspace</h3>
-                            <p className="text-gray-600 text-sm mt-1">
-                                Access campaigns, leads, and engagement analytics.
-                            </p>
+                      )}
+                    
+                      <div
+                        className="group border-2 border-gray-200 hover:border-purple-500 rounded-2xl p-6 flex flex-col items-center text-center 
+                        transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white"
+                      >
+                        <div className="bg-purple-100 p-3 rounded-full mb-4 group-hover:bg-purple-200 transition">
+                          <img src="/icons/marketing.png" alt="Marketing Workspace" className="w-10 h-10" />
                         </div>
-                        <div className="border-2 border-gray-200 hover:border-purple-500 rounded-xl p-5 cursor-pointer transition-all hover:shadow-md">
-                            <img src="/icons/sales.png" alt="Sales Dashboard" className="mx-auto mb-3 w-12" />
-                            <h3 className="font-semibold text-lg text-gray-900">Sales Dashboard</h3>
-                            <p className="text-gray-600 text-sm mt-1">
-                                Track deals, prospects, and conversion insights.
-                            </p> 
-                            {/* ^-- YEH THA ERROR --^ (</SAP> ki jagah </p>) */}
+                        <h3 className="font-semibold text-lg text-gray-900 mb-1">
+                          Marketing Workspace
+                        </h3>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                          Access campaigns, leads, and engagement analytics.
+                        </p>
+                      </div>
+                    
+                      <div
+                        className="group border-2 border-gray-200 hover:border-purple-500 rounded-2xl p-6 flex flex-col items-center text-center 
+                        transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white"
+                      >
+                        <div className="bg-purple-100 p-3 rounded-full mb-4 group-hover:bg-purple-200 transition">
+                          <img src="/icons/sales.png" alt="Sales Dashboard" className="w-10 h-10" />
                         </div>
-                        <div className="border-2 border-gray-200 hover:border-purple-500 rounded-xl p-5 cursor-pointer transition-all hover:shadow-md">
-                            <img src="/icons/analyst.png" alt="Analyst Panel" className="mx-auto mb-3 w-12" />
-                            <h3 className="font-semibold text-lg text-gray-900">Analyst Panel</h3>
-                            <p className="text-gray-600 text-sm mt-1">
-                                Dive deep into data, performance & AI-driven insights.
-                            </p>
+                        <h3 className="font-semibold text-lg text-gray-900 mb-1">
+                          Sales Dashboard
+                        </h3>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                          Track deals, prospects, and conversion insights.
+                        </p>
+                      </div>
+                    
+                      <div
+                        className="group border-2 border-gray-200 hover:border-purple-500 rounded-2xl p-6 flex flex-col items-center text-center 
+                        transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white"
+                      >
+                        <div className="bg-purple-100 p-3 rounded-full mb-4 group-hover:bg-purple-200 transition">
+                          <img src="/icons/analyst.png" alt="Analyst Panel" className="w-10 h-10" />
                         </div>
+                        <h3 className="font-semibold text-lg text-gray-900 mb-1">
+                          Analyst Panel
+                        </h3>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                          Dive deep into data, performance & AI-driven insights.
+                        </p>
+                      </div>
                     </div>
+
                     <button
                         onClick={handleContinue}
                         className="w-full bg-purple-600 text-white font-semibold py-3.5 rounded-lg hover:bg-purple-700 transition-colors text-base mb-4"
